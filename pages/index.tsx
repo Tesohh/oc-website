@@ -1,11 +1,17 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Navbar from "../components/navbar";
 import styles from "../styles/Home.module.css";
+// import favicon from "favicon.ico"
 
 const Home: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>OnlyCriminals</title>
+        {/* <link rel="shortcut icon" href={favicon.src} /> */}
+      </Head>
       <div className={styles.bgWrap}>
         <Image
           alt="Banner"
